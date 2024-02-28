@@ -1,0 +1,26 @@
+ejercicio 2
+2.	Escribe un programa en C++ que calcule la raíz cuadrada de un número ingresado por el usuario
+utilizando la función sqrt() de la biblioteca cmath. Asegúrate de incluir la biblioteca correspondiente.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double numero;
+
+    cout << "Digite el numero a calcular la raiz cuadrada: \n"; 
+    cin >> numero;
+
+    if (numero < 0) {
+        cout << "No se puede calcular la raiz cuadrada de un numero negativo" << endl;
+    }
+    else {
+        double raizCuadrada = sqrt(numero);
+        cout << "La raiz cuadrada de " << numero << " es " << raizCuadrada << endl;
+    }
+
+    return 0;
+    
+}
